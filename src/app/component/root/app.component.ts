@@ -11,6 +11,8 @@ export class AppComponent {
   color: ThemePalette = 'primary';
   checked = false;
   disabled = false;
+  events: string[] = [];
+  opened = false;
 
   slideToggleChange($event: MatSlideToggleChange): void {
     console.log($event);

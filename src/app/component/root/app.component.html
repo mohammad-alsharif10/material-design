@@ -1,0 +1,39 @@
+<!--&lt;!&ndash;<mat-drawer-container>&ndash;&gt;-->
+<!--&lt;!&ndash;  <mat-drawer mode="over" closed #matDrawer>Drawer content</mat-drawer>&ndash;&gt;-->
+<!--&lt;!&ndash;  <app-navbar [drawer]="matDrawer"></app-navbar>&ndash;&gt;-->
+<!--&lt;!&ndash;</mat-drawer-container>&ndash;&gt;-->
+
+<mat-sidenav-container>
+  <mat-sidenav mode="over" closed #matSidenav class="mat-elevation-z8 mat-sidenav">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <button mat-raised-button color="accent">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-raised-button color="accent">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-raised-button color="accent">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem" [ngStyle]="{'align-items':'flex-end'}">
+        <button mat-raised-button color="accent">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-navbar [sideNav]="matSidenav"></app-navbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!--<app-nav></app-nav>-->
